@@ -23,19 +23,19 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
+        header: "Oxygen",
         body: "Oxygen",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
+          light: "#fffff",
           lightgray: "#e5e5e5",
           gray: "#b8b8b8",
           darkgray: "#4e4e4e",
           dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
+          secondary: "#074993",
+          tertiary: "#a7c600",
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#fff23688",
         },
@@ -45,10 +45,10 @@ const config: QuartzConfig = {
           gray: "#646464",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
+          secondary: "#3f89dd",
+          tertiary: "#ccdc39",
           highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          textHighlight: "#3aa0288",
         },
       },
     },
@@ -56,9 +56,9 @@ const config: QuartzConfig = {
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
-      Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "git", "filesystem"],
-      }),
+//      Plugin.CreatedModifiedDate({
+//        priority: ["frontmatter", "git", "filesystem"],
+//      }),
       Plugin.SyntaxHighlighting({
         theme: {
           light: "github-light",
@@ -66,7 +66,7 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+      Plugin.ObsidianFlavoedMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
@@ -74,8 +74,7 @@ const config: QuartzConfig = {
       Plugin.Latex({ renderEngine: "katex" }),
     ],
     filters: [
-      Plugin.RemoveDrafts(),
-      Plugin.ExplicitPublish()
+      Plugin.RemoveDrafts()
     ],
     emitters: [
       Plugin.AliasRedirects(),
