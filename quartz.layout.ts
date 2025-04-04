@@ -38,7 +38,7 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      title: "Sisältö", 
+      title: "Valikko", 
       folderClickBehavior: "collapse", 
       folderDefaultState: "open",
       useSavedState: true
