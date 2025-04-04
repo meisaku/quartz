@@ -38,6 +38,7 @@ export const defaultContentPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
       ],
+      mobileOnly: true
     })),
     Component.DesktopOnly(Component.Flex({
       components: [
@@ -47,6 +48,7 @@ export const defaultContentPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
       ],
+      desktopOnly: true
     })),
     Component.Explorer({
       title: "Valikko", 

@@ -13,7 +13,9 @@ type FlexConfig = {
   }[]
   direction?: "row" | "row-reverse" | "column" | "column-reverse"
   wrap?: "nowrap" | "wrap" | "wrap-reverse"
-  gap?: string
+  gap?: string,
+  mobileOnly?: boolean,
+  desktopOnly?: boolean
 }
 
 export default ((config: FlexConfig) => {
@@ -21,9 +23,11 @@ export default ((config: FlexConfig) => {
     const direction = config.direction ?? "row"
     const wrap = config.wrap ?? "nowrap"
     const gap = config.gap ?? "1rem"
+    let classStr = config.mobileOnly ? 'mobile-only' : ''
+    classStr += classStr ?? (config.desktopOnly ? 'desktop-only' : '')
 
     return (
-      <div style={`display: flex; flex-direction: ${direction}; flex-wrap: ${wrap}; gap: ${gap};`}>
+      <div style={`display: flex; flex-direction: ${direction}; flex-wrap: ${wrap}; gap: ${gap};`} class={classStr}>
         {config.components.map((c) => {
           const grow = c.grow ? 1 : 0
           const shrink = (c.shrink ?? true) ? 1 : 0
