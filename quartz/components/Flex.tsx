@@ -24,7 +24,7 @@ export default ((config: FlexConfig) => {
     const wrap = config.wrap ?? "nowrap"
     const gap = config.gap ?? "1rem"
     let classStr = config.mobileOnly ? 'mobile-only' : ''
-    classStr += classStr ?? (config.desktopOnly ? 'desktop-only' : '')
+    classStr += (classStr && config.desktopOnly ? ' ' : '') + (config.desktopOnly ? 'desktop-only' : '')
 
     return (
       <div style={`display: flex; flex-direction: ${direction}; flex-wrap: ${wrap}; gap: ${gap};`} class={classStr}>
