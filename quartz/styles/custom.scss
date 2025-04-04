@@ -7,6 +7,6 @@
     display: none;
   }
 }
-.results-container:only-child {
+.search>.search-container>.search-space>.search-layout[data-preview]>.results-container:only-child {
   flex: 1;
 }
