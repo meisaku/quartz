@@ -2,7 +2,10 @@
 
 // put your custom CSS here!
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
+  .article-title {
+    margin-top: 1rem;
+  }
   .sidebar {
     .explorer-toggle.mobile-explorer {
       padding-left: 0;
@@ -16,6 +19,9 @@
     padding-right: 0;
     width: auto;
   }
+  .desktop-only {
+    display: none !important;
+  }
 }
 .popover {
   .breadcrumb-container {
@@ -24,4 +30,9 @@
 }
 .search>.search-container>.search-space>.search-layout[data-preview]>.results-container:only-child {
   flex: 1;
+}
+@media (min-width: 801px) {
+  .mobile-only {
+      display: none !important;
+  }
 }
