@@ -37,7 +37,12 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      title: "Sisältö", 
+      folderClickBehavior: "collapse", 
+      folderDefaultState: "open",
+      useSavedState: true
+    }),
   ],
   right: [
     Component.Graph(),
