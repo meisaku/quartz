@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "Johku Support",
-    pageTitleSuffix: "",
+    pageTitleSuffix: " - Johku Support",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
