@@ -28,7 +28,18 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Flex({
+    Component.MobileOnly(Component.Flex({
+      components: [
+        {
+          Component: Component.Search({
+            enablePreview: false
+          }),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+      ],
+    })),
+    Component.DesktopOnly(Component.Flex({
       components: [
         {
           Component: Component.Search(),
@@ -36,7 +47,7 @@ export const defaultContentPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
       ],
-    }),
+    })),
     Component.Explorer({
       title: "Valikko", 
       folderClickBehavior: "collapse", 
