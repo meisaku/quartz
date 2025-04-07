@@ -7,12 +7,12 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
   const baseDir = pathToRoot(fileData.slug!)
   return (
-    <a class="page-logo">
-      <img src="`https://${cfg.baseUrl}/static/johku-logo.svg`" alt="" aria-hidden="true" />
+    `<a class="page-logo">
+      <img src="https://${cfg.baseUrl}/static/johku-logo.svg" alt="" aria-hidden="true" />
       <h2 class={classNames(displayClass, "page-title")}>
         {title}
       </h2>
-    </a>
+    </a>`
   )
 }
 
