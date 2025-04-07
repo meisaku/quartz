@@ -121,7 +121,15 @@ body {
   --titleFont: 'Corisande', 'Oxygen', sans-serif;
   --headerFont: 'Corisande', 'Oxygen', sans-serif;
   --bodyFont: 'Corisande', 'Oxygen', sans-serif;
+  letter-spacing: -0.015rem;
 }
+h1 {
+  letter-spacing: -0.03rem;
+}
+h2 {
+  letter-spacing: -0.025rem;
+}
+
 @media (max-width: 800px) {
   .article-title {
     margin-top: 1rem;
