@@ -125,9 +125,17 @@ body {
   .callout>.callout-content>:first-child {
     margin-top: 1em;
   }
+  .page>#quartz-body .sidebar {
+    margin: 2rem 2rem 2rem
+  }
   .callout-title {
     display: none;
   }
+}
+.page-logo img {
+  display: none;
+  margin-top: 0;
+  border-radius: 0;
 }
 h1, .page-title {
   letter-spacing: -0.03rem;
@@ -166,6 +174,10 @@ h2 {
   flex: 1;
 }
 @media (min-width: 801px) {
+  .page-logo img {
+    display: block;
+    margin-right: 20px;
+  }
   .mobile-only {
       display: none !important;
   }
