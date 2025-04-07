@@ -121,7 +121,13 @@ body {
   --titleFont: 'Corisande', 'Oxygen', sans-serif;
   --headerFont: 'Corisande', 'Oxygen', sans-serif;
   --bodyFont: 'Corisande', 'Oxygen', sans-serif;
-  letter-spacing: -0.015rem;
+  letter-spacing: -0.008rem;
+  .callout>.callout-content>:first-child {
+    margin-top: 1em;
+  }
+  .callout-title {
+    display: none;
+  }
 }
 h1, .page-title {
   letter-spacing: -0.03rem;
