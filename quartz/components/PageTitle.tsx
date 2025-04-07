@@ -8,7 +8,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const baseDir = pathToRoot(fileData.slug!)
   return (
     <a class="page-logo">
-      <img src="https://${cfg.baseUrl}/static/johku-logo.svg" alt="" aria-hidden="true" />
+      <img src="`https://${cfg.baseUrl}/static/johku-logo.svg`" alt="" aria-hidden="true" />
       <h2 class={classNames(displayClass, "page-title")}>
         {title}
       </h2>
