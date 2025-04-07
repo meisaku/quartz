@@ -1,6 +1,121 @@
 @use "./base.scss";
 
+
+@font-face {
+    font-family: 'Corisande';
+    font-weight: bold;
+    font-style: normal;
+	font-display: swap;
+    src: url('https://font.jalusta.com/fonts/corisande_bd-webfont.eot');
+    src: url('https://font.jalusta.com/fonts/corisande_bd-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_bd-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_bd-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_bd-webfont.svg#wf') format('svg');
+}
+@font-face {
+    font-family: 'Corisande';
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+    src: url('https://font.jalusta.com/fonts/corisande_rg-webfont.eot');
+    src: url('https://font.jalusta.com/fonts/corisande_rg-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.svg#wf') format('svg');
+}
+@font-face {
+    font-family: 'Corisande';
+    font-weight: normal;
+    font-style: italic;
+	font-display: swap;
+    src: url('https://font.jalusta.com/fonts/corisande_it-webfont.eot');
+    src: url('https://font.jalusta.com/fonts/corisande_it-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_it-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_it-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_it-webfont.svg#wf') format('svg');
+}
+@font-face {
+    font-family: 'Corisande';
+    font-weight: bold;
+    font-style: italic;
+	font-display: swap;
+    src: url('https://font.jalusta.com/fonts/corisande_bd_it-webfont.eot');
+    src: url('https://font.jalusta.com/fonts/corisande_bd_it-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_bd_it-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_bd_it-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_bd_it-webfont.svg#wf') format('svg');
+}
+@font-face {
+    font-family: 'Corisande Light';
+    font-weight: normal;
+    font-style: normal;
+	font-display: swap;
+    src: url('https://font.jalusta.com/fonts/corisande_lt-webfont.eot');
+    src: url('https://font.jalusta.com/fonts/corisande_lt-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_lt-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_lt-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_lt-webfont.svg#wf') format('svg');
+}
+@font-face {
+    font-family: 'Corisande Light';
+    font-weight: 600;
+    font-style: normal;
+	font-display: swap;
+    src: url('https://font.jalusta.com/fonts/corisande_rg-webfont.eot');
+    src: url('https://font.jalusta.com/fonts/corisande_rg-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.svg#wf') format('svg');
+}
+@font-face {
+    font-family: 'Corisande Light';
+    font-weight: normal;
+    font-style: italic;
+	font-display: swap;
+    src: url('https://font.jalusta.com/fonts/corisande_lt_it-webfont.eot');
+    src: url('https://font.jalusta.com/fonts/corisande_lt_it-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_lt_it-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_lt_it-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_lt_it-webfont.svg#wf') format('svg');
+}
+
 // put your custom CSS here!
+
+@font-face {
+  font-family: 'Corisande';
+  font-weight: bold;
+  font-style: normal;
+font-display: swap;
+  src: url('https://font.jalusta.com/fonts/corisande_bd-webfont.eot');
+  src: url('https://font.jalusta.com/fonts/corisande_bd-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_bd-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_bd-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_bd-webfont.svg#wf') format('svg');
+}
+@font-face {
+  font-family: 'Corisande';
+  font-weight: normal;
+  font-style: normal;
+font-display: swap;
+  src: url('https://font.jalusta.com/fonts/corisande_rg-webfont.eot');
+  src: url('https://font.jalusta.com/fonts/corisande_rg-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.svg#wf') format('svg');
+}
+@font-face {
+  font-family: 'Corisande';
+  font-weight: normal;
+  font-style: italic;
+font-display: swap;
+  src: url('https://font.jalusta.com/fonts/corisande_it-webfont.eot');
+  src: url('https://font.jalusta.com/fonts/corisande_it-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_it-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_it-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_it-webfont.svg#wf') format('svg');
+}
+@font-face {
+  font-family: 'Corisande';
+  font-weight: bold;
+  font-style: italic;
+font-display: swap;
+  src: url('https://font.jalusta.com/fonts/corisande_bd_it-webfont.eot');
+  src: url('https://font.jalusta.com/fonts/corisande_bd_it-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_bd_it-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_bd_it-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_bd_it-webfont.svg#wf') format('svg');
+}
+@font-face {
+  font-family: 'Corisande Light';
+  font-weight: normal;
+  font-style: normal;
+font-display: swap;
+  src: url('https://font.jalusta.com/fonts/corisande_lt-webfont.eot');
+  src: url('https://font.jalusta.com/fonts/corisande_lt-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_lt-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_lt-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_lt-webfont.svg#wf') format('svg');
+}
+@font-face {
+  font-family: 'Corisande Light';
+  font-weight: 600;
+  font-style: normal;
+font-display: swap;
+  src: url('https://font.jalusta.com/fonts/corisande_rg-webfont.eot');
+  src: url('https://font.jalusta.com/fonts/corisande_rg-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_rg-webfont.svg#wf') format('svg');
+}
+@font-face {
+  font-family: 'Corisande Light';
+  font-weight: normal;
+  font-style: italic;
+font-display: swap;
+  src: url('https://font.jalusta.com/fonts/corisande_lt_it-webfont.eot');
+  src: url('https://font.jalusta.com/fonts/corisande_lt_it-webfont.eot?#iefix') format('embedded-opentype'),url('https://font.jalusta.com/fonts/corisande_lt_it-webfont.woff') format('woff'),url('https://font.jalusta.com/fonts/corisande_lt_it-webfont.ttf') format('truetype'),url('https://font.jalusta.com/fonts/corisande_lt_it-webfont.svg#wf') format('svg');
+}
 
 body {
   --titleFont: 'Corisande', 'Oxygen', sans-serif;
