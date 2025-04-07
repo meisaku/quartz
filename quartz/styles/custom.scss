@@ -1,8 +1,13 @@
+@import url("https://font.jalusta.com/css/fonts.css"); 
 @use "./base.scss";
 
 // put your custom CSS here!
-@import url("https://font.jalusta.com/css/fonts.css"); 
 
+body {
+  --titleFont: 'Corisande', 'Oxygen', sans-serif;
+  --headerFont: 'Corisande', 'Oxygen', sans-serif;
+  --bodyFont: 'Corisande', 'Oxygen', sans-serif;
+}
 @media (max-width: 800px) {
   .article-title {
     margin-top: 1rem;

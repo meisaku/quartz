@@ -16,16 +16,16 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "fi-FI",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "johkuhelpdesk.meisaku.fi",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "local",
+      fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Corisande",
-        body: "Corisande",
-        code: "monospace",
+        header: "Oxygen",
+        body: "Oxygen",
+        code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
